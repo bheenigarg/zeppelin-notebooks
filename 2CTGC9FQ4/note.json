@@ -1,0 +1,183 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc",
+      "user": "anonymous",
+      "dateUpdated": "Aug 17, 2017 10:17:06 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nres1: org.apache.spark.SparkContext \u003d org.apache.spark.SparkContext@37e1781\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502990220778_-1953719716",
+      "id": "20170817-101700_215563507",
+      "dateCreated": "Aug 17, 2017 10:17:00 AM",
+      "dateStarted": "Aug 17, 2017 10:17:06 AM",
+      "dateFinished": "Aug 17, 2017 10:17:07 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark._\nimport org.apache.spark.sql.SQLContext\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql.functions._\nimport org.apache.spark.sql.functions.unix_timestamp\nimport org.apache.spark.sql._",
+      "user": "anonymous",
+      "dateUpdated": "Aug 17, 2017 11:36:09 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nimport org.apache.spark._\n\nimport org.apache.spark.sql.SQLContext\n\nimport org.apache.spark.sql.types._\n\nimport org.apache.spark.sql.functions._\n\nimport org.apache.spark.sql.functions.unix_timestamp\n\nimport org.apache.spark.sql._\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502994937761_-1614045042",
+      "id": "20170817-113537_906188625",
+      "dateCreated": "Aug 17, 2017 11:35:37 AM",
+      "dateStarted": "Aug 17, 2017 11:36:09 AM",
+      "dateFinished": "Aug 17, 2017 11:36:13 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val df \u003d sqlContext.read.format(\"csv\").load(\"https://raw.githubusercontent.com/caroljmcdonald/sparkmldecisiontree/master/data/rita2014jan.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "Aug 17, 2017 11:37:45 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njava.io.IOException: No FileSystem for scheme: https\n  at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:2584)\n  at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:2591)\n  at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:91)\n  at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:2630)\n  at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:2612)\n  at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:370)\n  at org.apache.hadoop.fs.Path.getFileSystem(Path.java:296)\n  at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$14.apply(DataSource.scala:372)\n  at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$14.apply(DataSource.scala:370)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)\n  at scala.collection.immutable.List.foreach(List.scala:381)\n  at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)\n  at scala.collection.immutable.List.flatMap(List.scala:344)\n  at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:370)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:152)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:135)\n  ... 63 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502995041038_2146626980",
+      "id": "20170817-113721_223761475",
+      "dateCreated": "Aug 17, 2017 11:37:21 AM",
+      "dateStarted": "Aug 17, 2017 11:37:45 AM",
+      "dateFinished": "Aug 17, 2017 11:37:48 AM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val df \u003d spark.read\n        .format(\"csv\")\n        //.option(\"header\", true)\n        //.option(\"InferSchema\", true)\n        .load(\"https://raw.githubusercontent.com/caroljmcdonald/sparkmldecisiontree/master/data/rita2014jan.csv\")\n        \ndf.dtypes",
+      "user": "anonymous",
+      "dateUpdated": "Aug 17, 2017 11:36:17 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ndf: org.apache.spark.sql.DataFrameReader \u003d org.apache.spark.sql.DataFrameReader@6a91397c\n\n\n\n\u003cconsole\u003e:3: error: illegal start of definition\n        .load(\"https://raw.githubusercontent.com/caroljmcdonald/sparkmldecisiontree/master/data/rita2014jan.csv\")\n        ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502990226204_-1410054196",
+      "id": "20170817-101706_1299464067",
+      "dateCreated": "Aug 17, 2017 10:17:06 AM",
+      "dateStarted": "Aug 17, 2017 11:36:17 AM",
+      "dateFinished": "Aug 17, 2017 11:36:19 AM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502994800394_-898243522",
+      "id": "20170817-113320_498025108",
+      "dateCreated": "Aug 17, 2017 11:33:20 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "/DecisionTrees/FlightData",
+  "id": "2CTGC9FQ4",
+  "angularObjects": {
+    "2CPJ3QQS3:shared_process": [],
+    "2CQ3S9HXD:shared_process": [],
+    "2CP38XEE1:shared_process": [],
+    "2CR4FAJ3K:shared_process": [],
+    "2CRKKWAUN:shared_process": [],
+    "2CNWX8NRS:shared_process": [],
+    "2CPXTNX5C:shared_process": [],
+    "2CPSM3TXG:shared_process": [],
+    "2CPR5WWTB:shared_process": [],
+    "2CR74YFC6:shared_process": [],
+    "2CSBECX5Q:shared_process": [],
+    "2CRDJS65D:shared_process": [],
+    "2CPVTQEZJ:shared_process": [],
+    "2CQ2MRVY1:shared_process": [],
+    "2CRA42DNP:shared_process": [],
+    "2CP62B91C:shared_process": [],
+    "2CPBK8F2A:shared_process": [],
+    "2CPU3V8PF:shared_process": [],
+    "2CQPR1QSH:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

@@ -1,0 +1,218 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc",
+      "user": "anonymous",
+      "dateUpdated": "Aug 7, 2017 10:03:36 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nres0: org.apache.spark.SparkContext \u003d org.apache.spark.SparkContext@4c45963c\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502125364647_1196132393",
+      "id": "20170807-100244_819390763",
+      "dateCreated": "Aug 7, 2017 10:02:44 AM",
+      "dateStarted": "Aug 7, 2017 10:03:36 AM",
+      "dateFinished": "Aug 7, 2017 10:04:15 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "println(\"Hello World\")",
+      "user": "anonymous",
+      "dateUpdated": "Aug 7, 2017 10:06:48 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello World\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502125416395_41946989",
+      "id": "20170807-100336_2112116202",
+      "dateCreated": "Aug 7, 2017 10:03:36 AM",
+      "dateStarted": "Aug 7, 2017 10:06:49 AM",
+      "dateFinished": "Aug 7, 2017 10:06:49 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "sc.parallelize(1 to 1000).count()",
+      "user": "anonymous",
+      "dateUpdated": "Aug 7, 2017 10:14:33 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nres2: Long \u003d 1000\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502125608977_-1790167621",
+      "id": "20170807-100648_1343839849",
+      "dateCreated": "Aug 7, 2017 10:06:48 AM",
+      "dateStarted": "Aug 7, 2017 10:14:33 AM",
+      "dateFinished": "Aug 7, 2017 10:14:36 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.streaming._\nimport org.apache.spark.streaming.twitter._\nimport org.apache.spark.storage.StorageLevel\nimport scala.io.Source\nimport scala.collection.mutable.HashMap\nimport java.io.File\nimport org.apache.log4j.Logger\nimport org.apache.log4j.Level\nimport sys.process.stringSeqToProcess\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Aug 7, 2017 10:27:59 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nimport org.apache.spark.streaming._\n\n\n\n\u003cconsole\u003e:28: error: object twitter is not a member of package org.apache.spark.streaming\n       import org.apache.spark.streaming.twitter._\n                                         ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502126073864_-1321673156",
+      "id": "20170807-101433_2014794131",
+      "dateCreated": "Aug 7, 2017 10:14:33 AM",
+      "dateStarted": "Aug 7, 2017 10:27:59 AM",
+      "dateFinished": "Aug 7, 2017 10:28:00 AM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark._\nimport org.apache.spark.SparkContext._\nimport org.apache.spark.streaming._\nimport spark.streaming.twitter._\nimport org.apache.spark.streaming.StreamingContext._\nimport org.apache.log4j.Level\nimport Utilities._",
+      "user": "anonymous",
+      "dateUpdated": "Aug 7, 2017 10:46:25 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nimport org.apache.spark._\n\nimport org.apache.spark.SparkContext._\n\nimport org.apache.spark.streaming._\n\n\n\n\u003cconsole\u003e:55: error: value streaming is not a member of org.apache.spark.sql.SparkSession\n       import spark.streaming.twitter._\n                    ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502126879281_-1488888974",
+      "id": "20170807-102759_1448476032",
+      "dateCreated": "Aug 7, 2017 10:27:59 AM",
+      "dateStarted": "Aug 7, 2017 10:46:25 AM",
+      "dateFinished": "Aug 7, 2017 10:46:27 AM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502126976926_1503272573",
+      "id": "20170807-102936_1805724022",
+      "dateCreated": "Aug 7, 2017 10:29:36 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "/TwitterAnalysisSparkStreaming",
+  "id": "2CQ2PGZNR",
+  "angularObjects": {
+    "2CPJ3QQS3:shared_process": [],
+    "2CQ3S9HXD:shared_process": [],
+    "2CP38XEE1:shared_process": [],
+    "2CR4FAJ3K:shared_process": [],
+    "2CRKKWAUN:shared_process": [],
+    "2CNWX8NRS:shared_process": [],
+    "2CPXTNX5C:shared_process": [],
+    "2CPSM3TXG:shared_process": [],
+    "2CPR5WWTB:shared_process": [],
+    "2CR74YFC6:shared_process": [],
+    "2CSBECX5Q:shared_process": [],
+    "2CRDJS65D:shared_process": [],
+    "2CPVTQEZJ:shared_process": [],
+    "2CQ2MRVY1:shared_process": [],
+    "2CRA42DNP:shared_process": [],
+    "2CP62B91C:shared_process": [],
+    "2CPBK8F2A:shared_process": [],
+    "2CPU3V8PF:shared_process": [],
+    "2CQPR1QSH:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

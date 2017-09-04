@@ -1,0 +1,1214 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc",
+      "user": "anonymous",
+      "dateUpdated": "Aug 16, 2017 7:18:12 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "ANGULAR",
+            "data": "sc"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038594_822666565",
+      "id": "20170809-170744_552630540",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "dateStarted": "Aug 16, 2017 7:17:17 PM",
+      "dateFinished": "Aug 16, 2017 7:17:17 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark._\nimport org.apache.spark.sql.SQLContext\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql.functions._\nimport org.apache.spark.sql.functions.unix_timestamp\nimport org.apache.spark.sql._\nimport org.apache.spark.ml.feature.VectorAssembler\nimport org.apache.spark.ml.clustering.KMeans\n",
+      "user": "anonymous",
+      "dateUpdated": "Aug 16, 2017 7:15:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "ANGULAR",
+            "data": "import org.apache.spark._\nimport org.apache.spark.sql.SQLContext\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql.functions._\nimport org.apache.spark.sql.functions.unix_timestamp\nimport org.apache.spark.sql._\nimport org.apache.spark.ml.feature.VectorAssembler\nimport org.apache.spark.ml.clustering.KMeans\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038619_825359807",
+      "id": "20170809-170842_1574199277",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "dateStarted": "Aug 16, 2017 7:13:24 PM",
+      "dateFinished": "Aug 16, 2017 7:13:24 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "/*\nimport sqlContext.implicits._\nimport sqlContext._\n\nval schema \u003d StructType(Array(\n     StructField(\"dt\", TimestampType, true),\n     StructField(\"lat\", DoubleType, true),\n     StructField(\"lon\", DoubleType,true),\n     StructField(\"base\", StringType, true)\n))\n\nval df \u003d spark.read.option(\"header\",\"false\")\n        .schema(schema).csv(\"uber-raw-data-sep14.csv\")\n\n\ndf.printSchema()\ndf.show()\n*/",
+      "dateUpdated": "Aug 16, 2017 7:15:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038628_808046106",
+      "id": "20170809-182844_431552675",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "/*\nimport sqlContext.implicits._\nimport sqlContext._\n\nval schema \u003d StructType(Array(\n     StructField(\"dt\", TimestampType, true),\n     StructField(\"lat\", DoubleType, true),\n     StructField(\"lon\", DoubleType,true),\n     StructField(\"base\", StringType, true)\n))\n\ndf.printSchema()\n*/\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Aug 16, 2017 7:16:57 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorHide": false,
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "ANGULAR",
+            "data": "\nimport sqlContext.implicits._\nimport sqlContext._\n\nval schema \u003d StructType(Array(\n     StructField(\"dt\", TimestampType, true),\n     StructField(\"lat\", DoubleType, true),\n     StructField(\"lon\", DoubleType,true),\n     StructField(\"base\", StringType, true)\n))\n\ndf.printSchema()\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038637_804583366",
+      "id": "20170810-112548_263866841",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "dateStarted": "Aug 16, 2017 7:13:44 PM",
+      "dateFinished": "Aug 16, 2017 7:13:44 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "\nval df \u003d spark.read\n        .format(\"org.apache.spark.csv\")\n        .option(\"header\", false)\n        .option(\"dateFormat\", \"MM-dd-yyyy HH:mm:ss\")\n        .schema(schema)\n        .csv(\"uber-raw-data-sep14.csv\")\n        \n",
+      "user": "anonymous",
+      "dateUpdated": "Aug 16, 2017 7:17:57 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorHide": false,
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "ANGULAR",
+            "data": "\nval df \u003d spark.read\n        .format(\"org.apache.spark.csv\")\n        .option(\"header\", false)\n        .option(\"dateFormat\", \"MM-dd-yyyy HH:mm:ss\")\n        .schema(schema)\n        .csv(\"uber-raw-data-sep14.csv\")\n        \n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038645_813817340",
+      "id": "20170809-181914_772923893",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "dateStarted": "Aug 16, 2017 7:14:02 PM",
+      "dateFinished": "Aug 16, 2017 7:14:02 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val df \u003d spark.read\n        .format(\"csv\")\n        .option(\"header\", true)\n        .option(\"InferSchema\", true)\n        .csv(\"uber-raw-data-sep14.csv\")\n        \ndf.dtypes",
+      "dateUpdated": "Aug 16, 2017 7:15:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ndf: org.apache.spark.sql.DataFrame \u003d [Date/Time: string, Lat: double ... 2 more fields]\n\nres238: Array[(String, String)] \u003d Array((Date/Time,StringType), (Lat,DoubleType), (Lon,DoubleType), (Base,StringType))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038646_814971587",
+      "id": "20170810-114524_1937661452",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "df.show()",
+      "dateUpdated": "Aug 16, 2017 7:15:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------------+-------+--------+------+\n|       Date/Time|    Lat|     Lon|  Base|\n+----------------+-------+--------+------+\n|9/1/2014 0:01:00|40.2201|-74.0021|B02512|\n|9/1/2014 0:01:00|  40.75|-74.0027|B02512|\n|9/1/2014 0:03:00|40.7559|-73.9864|B02512|\n|9/1/2014 0:06:00| 40.745|-73.9889|B02512|\n|9/1/2014 0:11:00|40.8145|-73.9444|B02512|\n|9/1/2014 0:12:00|40.6735|-73.9918|B02512|\n|9/1/2014 0:15:00|40.7471|-73.6472|B02512|\n|9/1/2014 0:16:00|40.6613|-74.2691|B02512|\n|9/1/2014 0:32:00|40.3745|-73.9999|B02512|\n|9/1/2014 0:33:00|40.7633|-73.9773|B02512|\n|9/1/2014 0:33:00|40.7467|-73.6131|B02512|\n|9/1/2014 0:37:00|40.8105|  -73.96|B02512|\n|9/1/2014 0:38:00| 40.679|-74.0111|B02512|\n|9/1/2014 0:39:00|40.4023|-73.9839|B02512|\n|9/1/2014 0:48:00|40.7378|-74.0395|B02512|\n|9/1/2014 0:48:00|40.7214|-73.9884|B02512|\n|9/1/2014 0:49:00|40.8646|-73.9081|B02512|\n|9/1/2014 1:08:00|40.7398|-74.0061|B02512|\n|9/1/2014 1:17:00|40.6793|-74.0116|B02512|\n|9/1/2014 1:19:00|40.7328|-73.9875|B02512|\n+----------------+-------+--------+------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038655_811508847",
+      "id": "20170809-173015_1477543069",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// convert column Date/Time from string type to timestamp type\n// reference: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3741049972324885/3696710289009770/4413065072037724/latest.html\n\nval newdf \u003d df.select($\"Date/Time\", unix_timestamp($\"Date/Time\", \"MM/dd/yyyy HH:mm:ss\").cast(TimestampType).as(\"timestamp\"), $\"Lat\", $\"Lon\", $\"Base\")",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nnewdf: org.apache.spark.sql.DataFrame \u003d [Date/Time: string, timestamp: timestamp ... 3 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038666_893460362",
+      "id": "20170810-144415_811282236",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "newdf.show()",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------------+--------------------+-------+--------+------+\n|       Date/Time|           timestamp|    Lat|     Lon|  Base|\n+----------------+--------------------+-------+--------+------+\n|9/1/2014 0:01:00|2014-09-01 00:01:...|40.2201|-74.0021|B02512|\n|9/1/2014 0:01:00|2014-09-01 00:01:...|  40.75|-74.0027|B02512|\n|9/1/2014 0:03:00|2014-09-01 00:03:...|40.7559|-73.9864|B02512|\n|9/1/2014 0:06:00|2014-09-01 00:06:...| 40.745|-73.9889|B02512|\n|9/1/2014 0:11:00|2014-09-01 00:11:...|40.8145|-73.9444|B02512|\n|9/1/2014 0:12:00|2014-09-01 00:12:...|40.6735|-73.9918|B02512|\n|9/1/2014 0:15:00|2014-09-01 00:15:...|40.7471|-73.6472|B02512|\n|9/1/2014 0:16:00|2014-09-01 00:16:...|40.6613|-74.2691|B02512|\n|9/1/2014 0:32:00|2014-09-01 00:32:...|40.3745|-73.9999|B02512|\n|9/1/2014 0:33:00|2014-09-01 00:33:...|40.7633|-73.9773|B02512|\n|9/1/2014 0:33:00|2014-09-01 00:33:...|40.7467|-73.6131|B02512|\n|9/1/2014 0:37:00|2014-09-01 00:37:...|40.8105|  -73.96|B02512|\n|9/1/2014 0:38:00|2014-09-01 00:38:...| 40.679|-74.0111|B02512|\n|9/1/2014 0:39:00|2014-09-01 00:39:...|40.4023|-73.9839|B02512|\n|9/1/2014 0:48:00|2014-09-01 00:48:...|40.7378|-74.0395|B02512|\n|9/1/2014 0:48:00|2014-09-01 00:48:...|40.7214|-73.9884|B02512|\n|9/1/2014 0:49:00|2014-09-01 00:49:...|40.8646|-73.9081|B02512|\n|9/1/2014 1:08:00|2014-09-01 01:08:...|40.7398|-74.0061|B02512|\n|9/1/2014 1:17:00|2014-09-01 01:17:...|40.6793|-74.0116|B02512|\n|9/1/2014 1:19:00|2014-09-01 01:19:...|40.7328|-73.9875|B02512|\n+----------------+--------------------+-------+--------+------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038669_890767120",
+      "id": "20170810-144810_360446112",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val newdf1 \u003d newdf.select($\"Date/Time\", $\"timestamp\", $\"Lat\", $\"Lon\", $\"Base\", unix_timestamp($\"timestamp\", \"E\").as(\"weekday\"))\nnewdf1.show()",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nnewdf1: org.apache.spark.sql.DataFrame \u003d [Date/Time: string, timestamp: timestamp ... 4 more fields]\n+----------------+--------------------+-------+--------+------+----------+\n|       Date/Time|           timestamp|    Lat|     Lon|  Base|   weekday|\n+----------------+--------------------+-------+--------+------+----------+\n|9/1/2014 0:01:00|2014-09-01 00:01:...|40.2201|-74.0021|B02512|1409554860|\n|9/1/2014 0:01:00|2014-09-01 00:01:...|  40.75|-74.0027|B02512|1409554860|\n|9/1/2014 0:03:00|2014-09-01 00:03:...|40.7559|-73.9864|B02512|1409554980|\n|9/1/2014 0:06:00|2014-09-01 00:06:...| 40.745|-73.9889|B02512|1409555160|\n|9/1/2014 0:11:00|2014-09-01 00:11:...|40.8145|-73.9444|B02512|1409555460|\n|9/1/2014 0:12:00|2014-09-01 00:12:...|40.6735|-73.9918|B02512|1409555520|\n|9/1/2014 0:15:00|2014-09-01 00:15:...|40.7471|-73.6472|B02512|1409555700|\n|9/1/2014 0:16:00|2014-09-01 00:16:...|40.6613|-74.2691|B02512|1409555760|\n|9/1/2014 0:32:00|2014-09-01 00:32:...|40.3745|-73.9999|B02512|1409556720|\n|9/1/2014 0:33:00|2014-09-01 00:33:...|40.7633|-73.9773|B02512|1409556780|\n|9/1/2014 0:33:00|2014-09-01 00:33:...|40.7467|-73.6131|B02512|1409556780|\n|9/1/2014 0:37:00|2014-09-01 00:37:...|40.8105|  -73.96|B02512|1409557020|\n|9/1/2014 0:38:00|2014-09-01 00:38:...| 40.679|-74.0111|B02512|1409557080|\n|9/1/2014 0:39:00|2014-09-01 00:39:...|40.4023|-73.9839|B02512|1409557140|\n|9/1/2014 0:48:00|2014-09-01 00:48:...|40.7378|-74.0395|B02512|1409557680|\n|9/1/2014 0:48:00|2014-09-01 00:48:...|40.7214|-73.9884|B02512|1409557680|\n|9/1/2014 0:49:00|2014-09-01 00:49:...|40.8646|-73.9081|B02512|1409557740|\n|9/1/2014 1:08:00|2014-09-01 01:08:...|40.7398|-74.0061|B02512|1409558880|\n|9/1/2014 1:17:00|2014-09-01 01:17:...|40.6793|-74.0116|B02512|1409559420|\n|9/1/2014 1:19:00|2014-09-01 01:19:...|40.7328|-73.9875|B02512|1409559540|\n+----------------+--------------------+-------+--------+------+----------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038686_898077349",
+      "id": "20170810-155349_780557568",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "/*\n// split date and time into separate columns\nimport org.apache.spark.sql.functions.split\n\nval uber \u003d df.select(\n  split($\"Date/Time\", \" \")(0).alias(\"date\"),\n  split($\"Date/Time\", \" \")(1).alias(\"time\"),\n  $\"Lat\",$\"Lon\",$\"Base\"\n)\n\n//reference : https://stackoverflow.com/questions/44750844/how-to-split-column-to-two-different-columns\n\nuber.show()\n*/\n",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038692_881917895",
+      "id": "20170809-224501_520322100",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// define feature columns to put in the feature vectors\nval featureCols \u003d Array(\"Lat\",\"Lon\")\n\n// set the input column names\nval assembler \u003d new VectorAssembler().setInputCols(featureCols).setOutputCol(\"features\")\n\n// return a dataframe with all of the feature columns in a vector column\nval df2 \u003d assembler.transform(newdf)",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nfeatureCols: Array[String] \u003d Array(Lat, Lon)\n\nassembler: org.apache.spark.ml.feature.VectorAssembler \u003d vecAssembler_6c24b2cee347\n\ndf2: org.apache.spark.sql.DataFrame \u003d [Date/Time: string, timestamp: timestamp ... 4 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038725_869221182",
+      "id": "20170809-173033_1997534290",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "df2.show()",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------------+--------------------+-------+--------+------+------------------+\n|       Date/Time|           timestamp|    Lat|     Lon|  Base|          features|\n+----------------+--------------------+-------+--------+------+------------------+\n|9/1/2014 0:01:00|2014-09-01 00:01:...|40.2201|-74.0021|B02512|[40.2201,-74.0021]|\n|9/1/2014 0:01:00|2014-09-01 00:01:...|  40.75|-74.0027|B02512|  [40.75,-74.0027]|\n|9/1/2014 0:03:00|2014-09-01 00:03:...|40.7559|-73.9864|B02512|[40.7559,-73.9864]|\n|9/1/2014 0:06:00|2014-09-01 00:06:...| 40.745|-73.9889|B02512| [40.745,-73.9889]|\n|9/1/2014 0:11:00|2014-09-01 00:11:...|40.8145|-73.9444|B02512|[40.8145,-73.9444]|\n|9/1/2014 0:12:00|2014-09-01 00:12:...|40.6735|-73.9918|B02512|[40.6735,-73.9918]|\n|9/1/2014 0:15:00|2014-09-01 00:15:...|40.7471|-73.6472|B02512|[40.7471,-73.6472]|\n|9/1/2014 0:16:00|2014-09-01 00:16:...|40.6613|-74.2691|B02512|[40.6613,-74.2691]|\n|9/1/2014 0:32:00|2014-09-01 00:32:...|40.3745|-73.9999|B02512|[40.3745,-73.9999]|\n|9/1/2014 0:33:00|2014-09-01 00:33:...|40.7633|-73.9773|B02512|[40.7633,-73.9773]|\n|9/1/2014 0:33:00|2014-09-01 00:33:...|40.7467|-73.6131|B02512|[40.7467,-73.6131]|\n|9/1/2014 0:37:00|2014-09-01 00:37:...|40.8105|  -73.96|B02512|  [40.8105,-73.96]|\n|9/1/2014 0:38:00|2014-09-01 00:38:...| 40.679|-74.0111|B02512| [40.679,-74.0111]|\n|9/1/2014 0:39:00|2014-09-01 00:39:...|40.4023|-73.9839|B02512|[40.4023,-73.9839]|\n|9/1/2014 0:48:00|2014-09-01 00:48:...|40.7378|-74.0395|B02512|[40.7378,-74.0395]|\n|9/1/2014 0:48:00|2014-09-01 00:48:...|40.7214|-73.9884|B02512|[40.7214,-73.9884]|\n|9/1/2014 0:49:00|2014-09-01 00:49:...|40.8646|-73.9081|B02512|[40.8646,-73.9081]|\n|9/1/2014 1:08:00|2014-09-01 01:08:...|40.7398|-74.0061|B02512|[40.7398,-74.0061]|\n|9/1/2014 1:17:00|2014-09-01 01:17:...|40.6793|-74.0116|B02512|[40.6793,-74.0116]|\n|9/1/2014 1:19:00|2014-09-01 01:19:...|40.7328|-73.9875|B02512|[40.7328,-73.9875]|\n+----------------+--------------------+-------+--------+------+------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038739_877685657",
+      "id": "20170809-192522_955671617",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// create k means object\n// set the parameters to define the number of clusters and the maximum number of iterations to determine the clusters\n// fit the model to the input data\n\nval Array(trainingData, testData) \u003d df2.randomSplit(Array(0.8, 0.2))\nval kmeans \u003d new KMeans().setK(8).setFeaturesCol(\"features\").setPredictionCol(\"prediction\")\nval model \u003d kmeans.fit(df2)\n\n// 8 clusters based on \u0027features\u0027\nprintln(\"Final Clusters: \")\nmodel.clusterCenters.foreach(println)",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\n\ntrainingData: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] \u003d [Date/Time: string, timestamp: timestamp ... 4 more fields]\ntestData: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] \u003d [Date/Time: string, timestamp: timestamp ... 4 more fields]\n\nkmeans: org.apache.spark.ml.clustering.KMeans \u003d kmeans_c3b3c2a47d3a\n\nmodel: org.apache.spark.ml.clustering.KMeansModel \u003d kmeans_c3b3c2a47d3a\nFinal Clusters: \n[40.728105828693934,-73.99965521944587]\n[40.65556399125829,-73.78304139206466]\n[40.687278468416395,-73.96337435482819]\n[40.77336770751877,-73.86570066236195]\n[40.858524679487246,-73.59887399267402]\n[40.6972876332623,-74.20379686954863]\n[40.75740901039968,-73.97954068909587]\n[40.79351345875666,-73.9524904773385]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038742_876531411",
+      "id": "20170809-192621_197690955",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "  // apply the trained model on test dataset\n  \n  val categories \u003d model.transform(testData)\n  categories.show()",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ncategories: org.apache.spark.sql.DataFrame \u003d [Date/Time: string, timestamp: timestamp ... 5 more fields]\n+----------------+--------------------+-------+--------+------+------------------+----------+\n|       Date/Time|           timestamp|    Lat|     Lon|  Base|          features|prediction|\n+----------------+--------------------+-------+--------+------+------------------+----------+\n|9/1/2014 0:00:00|2014-09-01 00:00:...|40.7107|-73.9666|B02617|[40.7107,-73.9666]|         2|\n|9/1/2014 0:00:00|2014-09-01 00:00:...|40.7222|-73.9881|B02598|[40.7222,-73.9881]|         0|\n|9/1/2014 0:00:00|2014-09-01 00:00:...|40.7255|-73.9923|B02617|[40.7255,-73.9923]|         0|\n|9/1/2014 0:00:00|2014-09-01 00:00:...|40.7267|-73.9409|B02598|[40.7267,-73.9409]|         2|\n|9/1/2014 0:00:00|2014-09-01 00:00:...|  40.73|-73.9896|B02598|  [40.73,-73.9896]|         0|\n|9/1/2014 0:01:00|2014-09-01 00:01:...|40.7537|-73.8569|B02617|[40.7537,-73.8569]|         3|\n|9/1/2014 0:01:00|2014-09-01 00:01:...|40.7634|-73.9242|B02617|[40.7634,-73.9242]|         7|\n|9/1/2014 0:02:00|2014-09-01 00:02:...|40.7474|-74.0085|B02617|[40.7474,-74.0085]|         0|\n|9/1/2014 0:05:00|2014-09-01 00:05:...|40.6356|-73.7311|B02617|[40.6356,-73.7311]|         1|\n|9/1/2014 0:05:00|2014-09-01 00:05:...|40.7034|-73.9908|B02617|[40.7034,-73.9908]|         0|\n|9/1/2014 0:05:00|2014-09-01 00:05:...|40.7206|-73.9871|B02598|[40.7206,-73.9871]|         0|\n|9/1/2014 0:06:00|2014-09-01 00:06:...|40.6611|-73.9938|B02617|[40.6611,-73.9938]|         2|\n|9/1/2014 0:06:00|2014-09-01 00:06:...|40.7621| -73.986|B02617| [40.7621,-73.986]|         6|\n|9/1/2014 0:10:00|2014-09-01 00:10:...|40.7051|-73.9307|B02598|[40.7051,-73.9307]|         2|\n|9/1/2014 0:10:00|2014-09-01 00:10:...|40.7471| -73.987|B02617| [40.7471,-73.987]|         6|\n|9/1/2014 0:10:00|2014-09-01 00:10:...|40.7555| -73.974|B02617| [40.7555,-73.974]|         6|\n|9/1/2014 0:10:00|2014-09-01 00:10:...|40.7648|-73.9473|B02598|[40.7648,-73.9473]|         7|\n|9/1/2014 0:10:00|2014-09-01 00:10:...|40.7774|-73.9787|B02617|[40.7774,-73.9787]|         6|\n|9/1/2014 0:11:00|2014-09-01 00:11:...|40.7326|-73.9881|B02617|[40.7326,-73.9881]|         0|\n|9/1/2014 0:12:00|2014-09-01 00:12:...|40.7985|-73.9412|B02617|[40.7985,-73.9412]|         7|\n+----------------+--------------------+-------+--------+------+------------------+----------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038749_872299173",
+      "id": "20170809-195009_913237796",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "1. Which hours of the day and which cluster had the highest number of pickups?",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038757_856909217",
+      "id": "20170809-213403_1100420164",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "categories.select(hour($\"timestamp\").alias(\"hour\"), $\"prediction\")\n          .groupBy(\"hour\", \"prediction\")\n          .agg(count(\"prediction\").alias(\"count\"))\n          .orderBy(desc(\"count\")).show",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+----------+-----+\n|hour|prediction|count|\n+----+----------+-----+\n|  17|         6| 5813|\n|  18|         6| 5770|\n|  16|         6| 5467|\n|  18|         0| 5200|\n|  19|         0| 5029|\n|  19|         6| 5020|\n|  17|         0| 4952|\n|  15|         6| 4704|\n|  20|         0| 4531|\n|  16|         0| 4501|\n|  21|         0| 4467|\n|  20|         6| 4329|\n|  15|         0| 4073|\n|  22|         0| 4038|\n|  21|         6| 3788|\n|  14|         0| 3565|\n|  14|         6| 3557|\n|  23|         0| 3248|\n|  13|         0| 2969|\n|  13|         6| 2936|\n+----+----------+-----+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038765_853831226",
+      "id": "20170809-195344_1475055524",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "z.show(categories.select(hour($\"timestamp\").alias(\"hour\"), $\"prediction\")\n          .groupBy(\"hour\", \"prediction\")\n          .agg(count(\"prediction\").alias(\"count\"))\n          .orderBy(desc(\"count\")))",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "stacked": true
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "hour",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "prediction",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "count",
+                  "index": 2.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "hour\tprediction\tcount\n17\t6\t5813\n18\t6\t5770\n16\t6\t5467\n18\t0\t5200\n19\t0\t5029\n19\t6\t5020\n17\t0\t4952\n15\t6\t4704\n20\t0\t4531\n16\t0\t4501\n21\t0\t4467\n20\t6\t4329\n15\t0\t4073\n22\t0\t4038\n21\t6\t3788\n14\t0\t3565\n14\t6\t3557\n23\t0\t3248\n13\t0\t2969\n13\t6\t2936\n22\t6\t2900\n8\t6\t2853\n8\t0\t2847\n7\t6\t2722\n7\t0\t2671\n12\t6\t2669\n11\t6\t2604\n12\t0\t2576\n9\t6\t2504\n11\t0\t2474\n10\t6\t2471\n10\t0\t2390\n0\t0\t2378\n9\t0\t2336\n6\t0\t1976\n23\t6\t1843\n6\t6\t1727\n21\t2\t1668\n19\t2\t1663\n20\t2\t1646\n18\t2\t1629\n7\t7\t1574\n1\t0\t1569\n22\t2\t1520\n17\t2\t1466\n8\t7\t1405\n17\t7\t1354\n16\t7\t1323\n6\t7\t1316\n18\t7\t1309\n16\t2\t1280\n23\t2\t1235\n7\t2\t1227\n9\t2\t1220\n15\t7\t1217\n15\t2\t1187\n8\t2\t1177\n14\t7\t1163\n5\t0\t1152\n13\t2\t1133\n14\t2\t1122\n11\t2\t1109\n12\t2\t1076\n19\t7\t1075\n6\t2\t1068\n0\t6\t1060\n10\t2\t1059\n2\t0\t1055\n20\t7\t1042\n9\t7\t1030\n21\t7\t995\n5\t6\t983\n13\t7\t948\n10\t7\t914\n0\t2\t911\n11\t7\t870\n5\t2\t846\n3\t0\t836\n12\t7\t795\n4\t0\t794\n22\t7\t731\n4\t6\t643\n1\t2\t635\n5\t7\t629\n1\t6\t624\n19\t3\t610\n20\t3\t608\n18\t3\t602\n17\t3\t569\n21\t3\t549\n16\t3\t546\n4\t2\t538\n15\t3\t529\n14\t1\t510\n2\t6\t503\n3\t6\t494\n20\t1\t454\n3\t2\t448\n19\t1\t442\n23\t7\t434\n14\t3\t423\n22\t3\t417\n21\t1\t415\n18\t1\t410\n2\t2\t409\n11\t3\t402\n9\t3\t401\n13\t3\t393\n15\t1\t368\n10\t3\t362\n16\t1\t361\n22\t1\t360\n8\t3\t351\n12\t3\t331\n4\t7\t316\n7\t3\t305\n0\t7\t303\n6\t1\t298\n17\t1\t298\n23\t1\t268\n6\t3\t256\n5\t1\t255\n13\t1\t252\n23\t3\t246\n3\t7\t235\n12\t1\t206\n15\t5\t192\n1\t7\t178\n14\t5\t154\n9\t1\t152\n5\t3\t151\n2\t7\t146\n11\t1\t145\n4\t1\t142\n16\t5\t140\n17\t5\t139\n21\t5\t137\n7\t1\t130\n10\t1\t127\n19\t5\t125\n18\t5\t122\n22\t5\t122\n13\t5\t118\n20\t5\t114\n0\t3\t112\n8\t1\t111\n23\t5\t100\n11\t5\t98\n0\t1\t80\n4\t3\t78\n10\t5\t71\n7\t5\t68\n12\t5\t68\n16\t4\t66\n14\t4\t62\n18\t4\t59\n17\t4\t59\n6\t5\t58\n15\t4\t56\n3\t3\t56\n8\t5\t55\n9\t5\t55\n13\t4\t55\n12\t4\t53\n20\t4\t52\n1\t3\t51\n5\t5\t51\n2\t3\t48\n21\t4\t48\n10\t4\t46\n9\t4\t43\n22\t4\t43\n4\t5\t42\n1\t1\t40\n3\t1\t38\n19\t4\t36\n11\t4\t33\n8\t4\t31\n6\t4\t29\n0\t5\t26\n0\t4\t26\n23\t4\t25\n5\t4\t23\n7\t4\t22\n1\t5\t18\n2\t1\t17\n4\t4\t15\n3\t5\t13\n1\t4\t11\n2\t5\t8\n2\t4\t6\n3\t4\t5\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038772_863449948",
+      "id": "20170809-214412_723794660",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "2. How many pickups occurred in each cluster?",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038780_860371957",
+      "id": "20170809-212754_1567860801",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "categories.groupBy($\"prediction\")\n          .agg(count(\"prediction\").alias(\"count\"))\n          .orderBy(desc(\"count\")).show()",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----------+-----+\n|prediction|count|\n+----------+-----+\n|         0|71775|\n|         6|68258|\n|         2|27463|\n|         7|21356|\n|         3| 8566|\n|         1| 5993|\n|         5| 2008|\n|         4|  867|\n+----------+-----+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038784_945016715",
+      "id": "20170809-213722_9362091",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "z.show(categories.groupBy($\"prediction\")\n                 .agg(count(\"prediction\").alias(\"count\"))\n                 .orderBy(desc(\"count\")))",
+      "dateUpdated": "Aug 16, 2017 7:15:14 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "stacked": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "prediction",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "prediction",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "count",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "prediction\tcount\n0\t71775\n6\t68258\n2\t27463\n7\t21356\n3\t8566\n1\t5993\n5\t2008\n4\t867\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038785_944631966",
+      "id": "20170809-214154_1288390825",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "3. Which base(location) has the maximum number of pickups?",
+      "text": "",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038797_940014979",
+      "id": "20170809-214645_1113721354",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "categories.groupBy($\"Base\")\n          .agg(count(\"prediction\").alias(count))\n          .orderBy(desc(\"count\")).show()\n/*          \n// Plot      \nz.show(categories.groupBy($\"Base\")\n          .agg(count(\"prediction\").alias(\"count\"))\n          .orderBy(desc(\"count\")))\n*/",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "multiBarChart": {
+                  "stacked": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Base",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "Base",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "count",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+------+-----+\n|  Base|count|\n+------+-----+\n|B02617|75479|\n|B02598|48164|\n|B02682|39201|\n|B02764|35728|\n|B02512| 6886|\n+------+-----+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038797_940014979",
+      "id": "20170810-152226_172644850",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "4. Which weekday has the maximum number of pickups?",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038798_941169226",
+      "id": "20170810-152558_1556075856",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "categories.groupBy(weekofyear($\"timestamp\").alias(\"weekday\"))\n          .agg(count(\"prediction\").alias(\"count\"))\n          .orderBy(desc(\"count\")).show()",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-----+\n|weekday|count|\n+-------+-----+\n|     38|49937|\n|     37|49542|\n|     39|46740|\n|     36|46566|\n|     40|12673|\n+-------+-----+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038809_947709957",
+      "id": "20170810-160215_24970888",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "case class Map( lat : Float, lon : Float)",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\ndefined class Map\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038813_946170962",
+      "id": "20170810-160306_1539905399",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\nimport org.apache.spark.mllib.linalg.Vector\n\nval myMapRDD \u003d sc.parallelize(model.clusterCenters).map(s \u003d\u003e Map(s(0).toFloat, s(1).toFloat))",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nimport org.apache.commons.io.IOUtils\n\nimport java.net.URL\n\nimport java.nio.charset.Charset\n\nimport org.apache.spark.mllib.linalg.Vector\n\nmyMapRDD: org.apache.spark.rdd.RDD[Map] \u003d MapPartitionsRDD[420] at map at \u003cconsole\u003e:222\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038815_946940459",
+      "id": "20170810-173908_1312888204",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "\nval myMapDF \u003d myMapRDD.toDF()\nmyMapDF.show()",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nmyMapDF: org.apache.spark.sql.DataFrame \u003d [lat: float, lon: float]\n+---------+---------+\n|      lat|      lon|\n+---------+---------+\n|40.728107|-73.99966|\n|40.655563|-73.78304|\n| 40.68728|-73.96337|\n| 40.77337| -73.8657|\n|40.858524|-73.59888|\n| 40.69729| -74.2038|\n| 40.75741|-73.97954|\n|40.793514|-73.95249|\n+---------+---------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038820_931165754",
+      "id": "20170810-180614_1077289765",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "myMapDF.createOrReplaceTempView(\"ClusterMap\")",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038824_929626759",
+      "id": "20170810-175454_1257313350",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\n\nselect * from ClusterMap",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/text",
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": true
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "lat\tlon\n40.728107\t-73.99966\n40.655563\t-73.78304\n40.68728\t-73.96337\n40.77337\t-73.8657\n40.858524\t-73.59888\n40.69729\t-74.2038\n40.75741\t-73.97954\n40.793514\t-73.95249\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038830_928857261",
+      "id": "20170810-230704_405721236",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%angular\n",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038849_920008036",
+      "id": "20170811-000059_1548009616",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "\n",
+      "dateUpdated": "Aug 16, 2017 7:15:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/undefined",
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1502566038902_913467305",
+      "id": "20170811-001953_1845565781",
+      "dateCreated": "Aug 12, 2017 12:27:18 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "~Trash/Clustering using Spark MLlib- Uber data",
+  "id": "2CPPKJ4HD",
+  "angularObjects": {
+    "2CPJ3QQS3:shared_process": [],
+    "2CQ3S9HXD:shared_process": [],
+    "2CP38XEE1:shared_process": [],
+    "2CRKKWAUN:shared_process": [],
+    "2CNWX8NRS:shared_process": [],
+    "2CR4FAJ3K:shared_process": [],
+    "2CPXTNX5C:shared_process": [],
+    "2CPSM3TXG:shared_process": [],
+    "2CPR5WWTB:shared_process": [],
+    "2CR74YFC6:shared_process": [],
+    "2CSBECX5Q:shared_process": [],
+    "2CRDJS65D:shared_process": [],
+    "2CPVTQEZJ:shared_process": [],
+    "2CQ2MRVY1:shared_process": [],
+    "2CRA42DNP:shared_process": [],
+    "2CP62B91C:shared_process": [],
+    "2CPBK8F2A:shared_process": [],
+    "2CPU3V8PF:shared_process": [],
+    "2CQPR1QSH:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
